@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oqiw Oraylari</title>
+
+    <link rel="stylesheet" href="53-sabaq.css">
+</head>
+<body>
+
+<section class="login-section">
+
+    <div class="login-box">
+
+        <h2>Login</h2>
+
+        <input type="text" id="login" placeholder="Login">
+
+        <input type="password" id="password" placeholder="Parol">
+
+        <button onclick="login()">Kiriw</button>
+
+        <p id="error"></p>
+
+    </div>
+
+</section>
+
+<script>
+        
+function login() {
+
+    let login = document.getElementById("login").value;
+    let password = document.getElementById("password").value;
+
+    if(login === "admin" && password === "1234") {
+
+        window.location.href = "home.html";
+
+    } else {
+
+        document.getElementById("error").innerHTML =
+        "Login yamasa parol qáte!";
+
+    }
+}
+
+</script>
+
+</body>
+</html>      
